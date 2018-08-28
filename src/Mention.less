@@ -1,0 +1,69 @@
+/**
+ * Mention Component Style for uxcore
+ * @author
+ *
+ * Copyright 2014-2015, Uxcore Team, Alinw.
+ * All rights reserved.
+ */
+
+@mentionClassPrefix: kuma-mention;
+
+.@{mentionClassPrefix} {
+	position: relative;
+	&-editor {
+		padding: 7px 10px;
+		border: 1px solid @border-color;
+		border-radius: @input-border-radius;
+		color: @text-primary-color;
+		overflow: auto;
+		&:focus {
+			border-color: @border-focus-color;
+			outline: 0 none;
+		}
+	}
+	&-node {
+		padding: 0 2px;
+		background: none;
+		border: 0 none;
+		color: @link-color;
+	}
+	&-panel {
+		position: fixed;
+		margin: 0;
+		padding: 0;
+		background-color: @basic-100;
+		border: 1px solid @basic-500;
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+		display: none;
+		z-index: 99;
+		&-visible {
+			display: block;
+		}
+		&-item {
+			display: block;
+			padding: 2px 5px;
+			height: 30px;
+			line-height: 26px;
+			border-top: 1px dotted @basic-500;
+			cursor: pointer;
+			&:first-child {
+				border-top: 0 none;
+			}
+			&:hover {
+				background-color: @basic-400;
+			}
+			&-current {
+				background-color: @basic-400;
+			}
+			img {
+				vertical-align: middle;
+			}
+		}
+	}
+	&-placeholder {
+		position: absolute;
+		top: 8px;
+		left: 10px;	
+		color: @text-thirdary-color;
+	}
+}
