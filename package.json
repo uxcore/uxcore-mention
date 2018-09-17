@@ -1,6 +1,6 @@
 {
   "name": "uxcore-mention",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Mention anywhere with this component",
   "main": "build/index.js",
   "scripts": {

@@ -1,6 +1,9 @@
 # History
 
 ---
+## 0.4.4
+`CHANGED` support js style export
+
 ## 0.4.3
 `NEW` add `getMentions` API to editors for getting all current mentions.
 
